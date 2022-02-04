@@ -1,18 +1,23 @@
 const initialState={
-    movies:[]
+    movie:[]
 }
 
 const movieReducer=(state=initialState,action)=>{
     switch(action.type)
     {
-        case "GET_MOVIES":
+        case "GET_MOVIE":
             return {
                 ...state,
-                movies:action.movielist
+                movie:action.payload
+            }
+        case "CLEANUP":
+            return {
+                movie:[]
             }
         default:
-            return state;
+            return state
     }
+
 }
 
 export default movieReducer;
