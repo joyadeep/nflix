@@ -10,7 +10,7 @@ import {FaLanguage} from 'react-icons/fa';
 
 
 export const Movie = () => {
-const movie=useSelector((state)=>state.movieReducer.movie.data);
+const movie=useSelector((state)=>state.movieReducer.movie);
   const dispatch=useDispatch();
   const {id}=useParams();
   useEffect(()=>{

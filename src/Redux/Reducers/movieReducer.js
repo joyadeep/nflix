@@ -8,7 +8,7 @@ const movieReducer=(state=initialState,action)=>{
         case "GET_MOVIE":
             return {
                 ...state,
-                movie:action.payload
+                movie:action.payload.data
             }
         case "CLEANUP":
             return {

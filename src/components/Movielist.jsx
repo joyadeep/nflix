@@ -10,6 +10,7 @@ export const Movielist = () => {
     
     useEffect(()=>{
        dispatch(set_movies());
+     
     },[dispatch])
 
   return <>

@@ -1,12 +1,8 @@
 import axios from "axios";
 
 export const set_movies=()=>{
-    return async(dispatch)=>{
-        const response=await axios.get(`http://www.omdbapi.com/?apikey=2f081ebc&s="and"&type="movie"`);
-        dispatch({
-            type:"SET_MOVIES",
-            payload:response.data.Search
-        });
+    return {
+        type: "SET_MOVIES"
     }
 }
 
@@ -23,5 +19,22 @@ export const get_movie=(id)=>{
 export const cleanup=()=>{
     return {
         type:"CLEANUP"
+    }
+}
+
+export const cleanup_list=()=>{
+    return {
+        type: "CLEANUP_LIST"
+    }
+}
+
+export const search_movie=(tosearch)=>{
+    return async(dispatch)=>{
+        const movies=await axios.get(`http://www.omdbapi.com/?apikey=2f081ebc&s=${tosearch}`).catch((err)=>{console.log("error : ",err)}) ;
+        // console.log(movies)
+        dispatch({
+            type:"SEARCH_MOVIE",
+            payload:movies.data.Search
+        })
     }
 }
