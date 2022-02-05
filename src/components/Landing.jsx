@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {useDispatch} from 'react-redux';
 import {search_movie,cleanup_list} from '../Redux/Action/action';
 import {useNavigate} from 'react-router-dom';

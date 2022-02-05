@@ -8,9 +8,9 @@ function App() {
     <div className="bg-gray-700 w-full min-h-screen pb-10">
       <Header/>
     <Routes>
-      <Route path="/" element={<Landing/>}/>
-      <Route path="/movies" element={ <Movielist/> } />
-      <Route path="/movie/:id" element={ <Movie/> } />
+      <Route path="/nflix" element={<Landing/>}/>
+      <Route path="/nflix/movies" element={ <Movielist/> } />
+      <Route path="/nflix/movie/:id" element={ <Movie/> } />
       
 
     </Routes>
