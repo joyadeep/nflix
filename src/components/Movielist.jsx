@@ -17,7 +17,7 @@ export const Movielist = () => {
     
    
 
-<div className=' w-11/12 h-auto mx-auto mt-10 text-white grid grid-cols-5 gap-x-3 gap-y-5'>
+<div className=' w-11/12 h-auto mx-auto mt-10 text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-3 gap-y-5'>
     {/* card */}
    
 
@@ -29,9 +29,9 @@ export const Movielist = () => {
             return (
                 <div key={item.imdbID} className='bg-blue-400 h-fit pb-3 cursor-pointer rounded-lg overflow-hidden hover:scale-110 transition ease-in-out hover:transition'>
                 <Link to={`/movie/${item.imdbID}`} >
-                   <img className='h-2/3 w-full object-cover' src={item.Poster} alt="potrait of person" />
+                   <img className=' h-64 w-full object-cover' src={item.Poster} alt="potrait of person" />
                    <p className='px-2 text-lg font-semibold'>{item.Title}</p>
-                   <p className='px-2 font-medium text-sm'>{item.Year}</p>
+                   <p className='px-2 pt-4 h-fit font-medium text-sm'>{item.Year}</p>
                    
                 </Link>
              </div>
