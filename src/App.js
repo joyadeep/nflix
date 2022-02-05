@@ -9,8 +9,8 @@ function App() {
       <Header/>
     <Routes>
       <Route path="/nflix" element={<Landing/>}/>
-      <Route path="/nflix/movies" element={ <Movielist/> } />
-      <Route path="/nflix/movie/:id" element={ <Movie/> } />
+      <Route path="/movies" element={ <Movielist/> } />
+      <Route path="/movie/:id" element={ <Movie/> } />
       
 
     </Routes>
