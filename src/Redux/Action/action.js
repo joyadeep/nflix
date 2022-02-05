@@ -8,7 +8,7 @@ export const set_movies=()=>{
 
 export const get_movie=(id)=>{
     return async(dispatch)=>{
-        const movie=await axios.get(`http://www.omdbapi.com/?apikey=2f081ebc&i=${id}`).catch((err)=>{console.log(err)});
+        const movie=await axios.get(`https://www.omdbapi.com/?apikey=2f081ebc&i=${id}`).catch((err)=>{console.log(err)});
         dispatch({
             type:"GET_MOVIE",
             payload:movie
@@ -30,7 +30,7 @@ export const cleanup_list=()=>{
 
 export const search_movie=(tosearch)=>{
     return async(dispatch)=>{
-        const movies=await axios.get(`http://www.omdbapi.com/?apikey=2f081ebc&s=${tosearch}`).catch((err)=>{console.log("error : ",err)}) ;
+        const movies=await axios.get(`https://www.omdbapi.com/?apikey=2f081ebc&s=${tosearch}`).catch((err)=>{console.log("error : ",err)}) ;
         // console.log(movies)
         dispatch({
             type:"SEARCH_MOVIE",
