@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nflix/static/css/main.6ae1f386.css",
+    "main.js": "/nflix/static/js/main.1d7de794.js",
+    "static/media/background.jpg": "/nflix/static/media/background.5d14182a882a01d1eff7.jpg",
+    "index.html": "/nflix/index.html",
+    "main.6ae1f386.css.map": "/nflix/static/css/main.6ae1f386.css.map",
+    "main.1d7de794.js.map": "/nflix/static/js/main.1d7de794.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ae1f386.css",
+    "static/js/main.1d7de794.js"
+  ]
+}
